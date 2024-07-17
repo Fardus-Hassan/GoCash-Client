@@ -17,7 +17,7 @@ function Nav() {
     const [showNav, setShowNav] = useState(false);
 
     return (
-        <div className={`fixed  duration-300 ${showNav ? "md:translate-x-0 translate-x-0" : "md:translate-x-0 translate-x-[-256px]"}`}>
+        <div className={`fixed  duration-300 ${showNav ? "lg:translate-x-0 translate-x-0" : "lg:translate-x-0 translate-x-[-256px]"}`}>
             <nav className="flex flex-col w-64 h-screen px-4 py-5 overflow-y-auto bg-secColor">
                 <div className="flex justify-start items-center">
                     <div className="">
@@ -62,7 +62,7 @@ function Nav() {
                         </div>
                     </nav>
                 </div>
-                <div onClick={() => setShowNav(!showNav)} className="md:hidden bg-secColor w-[50px] h-[50px] rounded-r-xl flex flex-col justify-center items-center absolute top-0 left-0 translate-x-[256px]">
+                <div onClick={() => setShowNav(!showNav)} className="lg:hidden bg-secColor w-[50px] h-[50px] rounded-r-xl flex flex-col justify-center items-center absolute top-0 left-0 translate-x-[256px]">
 
                     {showNav ? <RxCross2 className="text-3xl text-white" /> : <FaBars className="text-2xl text-white" />}
                 </div>
